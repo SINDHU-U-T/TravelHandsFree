@@ -7,7 +7,8 @@ This App give travelers who don’t have alternative options a way to safely sto
 1. Add Locations
 2. Approve Partners
 3. Remove Partners based on feedback
-4.View All transactions 
+4.View All transactions
+
 # 1.2 Cloak Room Partners: - #
 1.Register 
 2.Add Cloak Room
@@ -17,6 +18,7 @@ This App give travelers who don’t have alternative options a way to safely sto
 6.Store luggage and send OTP or Key to Submit while taking back the luggage
 7.Ends order after taking back luggage
 8.View feedback
+
 # 1.3 Users: - #
 1.Registration
 2.Login
