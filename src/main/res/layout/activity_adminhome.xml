@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/admin"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+         />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/options"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp">
+
+
+        <RadioButton
+            android:id="@+id/viewTourists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_TOURISTS"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:buttonTint="@color/colorAccent"
+            android:textStyle="bold"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/viewCloakRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_CLOAK_ROOM"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:buttonTint="@color/colorAccent"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/viewFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_FEEDBACK"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:buttonTint="@color/colorAccent"
+
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="30dp"
+        android:onClick="next"
+        android:text="@string/NEXT"
+         />
+
+</LinearLayout>
+</ScrollView>

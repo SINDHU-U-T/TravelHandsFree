@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.android">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".utility.AppInstance"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activitycontrollers.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitycontrollers.UserSelectionActivity" />
+        <activity android:name=".activitycontrollers.admin.AdminLoginActivity" />
+        <activity android:name=".activitycontrollers.admin.AdminHomeActivity" />
+        <activity android:name=".activitycontrollers.admin.AdminChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.admin.ViewFeedbacksActivity" />
+        <activity android:name=".activitycontrollers.admin.FeedbackDetailsActivity" />
+        <activity android:name=".activitycontrollers.admin.ViewTouristsActivity" />
+        <activity android:name=".activitycontrollers.admin.TouristDetailsActivity" />
+        <activity android:name=".activitycontrollers.admin.ViewCloakRoomsActivity" />
+        <activity android:name=".activitycontrollers.admin.CloakRoomDetailsActivity" />
+
+
+        <activity android:name=".activitycontrollers.cloakroomowner.CloakRoomOwnerRegistrationActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.CloakRoomOwnerLoginActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.CloakRoomOwnerHomeActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.AddCloakRoomActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.ChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.ViewBookingsActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.EditProfileActivity" />
+        <activity android:name=".activitycontrollers.cloakroomowner.BookingDetailsActivity" />
+
+        <activity android:name=".activitycontrollers.tourist.TouristLoginActivity" />
+        <activity android:name=".activitycontrollers.tourist.TouristRegistrationActivity" />
+        <activity android:name=".activitycontrollers.tourist.TouristHomeActivity" />
+        <activity android:name=".activitycontrollers.tourist.ChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.tourist.GiveCloakRoomFeedbackActivity" />
+        <activity android:name=".activitycontrollers.tourist.CloakRoomActivity" />
+        <activity android:name=".activitycontrollers.tourist.ViewCloakRoomsActivity" />
+        <activity android:name=".activitycontrollers.tourist.CloakRoomDetailsActivity" />
+        <activity android:name=".activitycontrollers.tourist.ViewBookingsActivity" />
+        <activity android:name=".activitycontrollers.tourist.BookingDetailsActivity" />
+        <activity android:name=".activitycontrollers.tourist.TouristEditProfileActivity" />
+        <activity android:name=".activitycontrollers.tourist.TouristViewProfileActivity" />
+        <activity android:name=".activitycontrollers.tourist.SubmitLuggageActivity" />
+        <activity android:name=".activitycontrollers.tourist.TakebackLuggageActivity" />
+
+    </application>
+
+</manifest>

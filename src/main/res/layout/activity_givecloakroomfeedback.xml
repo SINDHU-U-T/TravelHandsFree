@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Background"
+    android:padding="20dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FEEDBACK"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/SELECT_CLOAKROOM"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloakroom"
+        />
+    </LinearLayout>
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:textSize="18sp"
+        android:hint="@string/ENTER_FEEDBACK"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:minLines="8"
+        android:maxLines="10"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        />
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="50dp"
+        android:onClick="submit"
+        android:text="@string/SUBMIT" />
+</LinearLayout>

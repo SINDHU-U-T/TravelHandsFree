@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/Background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/cloakroom"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/REGISTRATION"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/name"
+            android:hint="@string/NAME"
+            android:textColor="#ffffff"
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/contact"
+            android:hint="@string/CONTACT"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/mail"
+            android:hint="@string/MAIL"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/userName"
+            android:hint="@string/USERNAME"
+            android:layout_marginTop="10dp"
+
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/password"
+            android:hint="@string/PASSWORD"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/confirmpassword"
+            android:hint="@string/CONFIRM_PASSWORD"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+
+            />
+        <LinearLayout style="@style/LinearLayoutStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Photo:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/PROFILE_PHOTO"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:onClick="selectPhoto"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/image"/>
+
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_selector"
+            android:onClick="register"
+            android:text="@string/REGISTER"
+             />
+
+    </LinearLayout>
+</ScrollView>

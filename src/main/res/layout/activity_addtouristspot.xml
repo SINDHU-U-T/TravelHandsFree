@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/ADD_TOURIST_SPOT"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LOCATION"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:padding="5dp">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/locationlist"
+        />
+    </LinearLayout>
+    <EditText
+        style="@style/EditTextStyle"
+        android:hint="@string/ENTER_SPOT_NAME"
+        android:textSize="20sp"
+        android:id="@+id/name"
+        android:layout_marginTop="30dp"
+        />
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:hint="@string/ENTER_SPOT_DESCRIPTION"
+        android:textSize="20sp"
+        android:id="@+id/description"
+        android:layout_marginTop="20dp"
+        android:minLines="5"
+        android:gravity="start"
+        />
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+    <EditText
+        style="@style/EditTextStyle"
+        android:hint="@string/ENTER_SPOT_ADDRESS"
+        android:textSize="20sp"
+        android:id="@+id/address"
+        android:layout_marginTop="10dp"
+        android:minLines="5"
+        android:gravity="start"
+
+        />
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/TOURIST_SPOT_PHOTO"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:onClick="selectPhoto"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/image"/>
+
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="50dp"
+        android:onClick="addTouristSpot"
+        android:text="@string/ADD"
+        />
+</LinearLayout>
+</ScrollView>

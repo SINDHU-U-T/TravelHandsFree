@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/tourist"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+         />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/options"
+        android:layout_margin="10dp"
+
+        android:layout_marginTop="30dp">
+
+
+        <RadioButton
+            android:id="@+id/cloakRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/CLOAK_ROOM"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:buttonTint="@color/colorAccent"
+
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/viewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_PROFILE"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:buttonTint="@color/colorAccent"
+
+            android:textStyle="bold" />
+
+
+
+        <RadioButton
+            android:id="@+id/editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/EDIT_PROFILE"
+            android:textColor="#ffffff"
+            android:buttonTint="@color/colorAccent"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="20dp"
+        android:onClick="next"
+        android:text="@string/NEXT"
+        />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Background"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/cloakroom"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/USERNAME"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PASSWORD"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:onClick="login"
+        android:text="@string/LOGIN"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:onClick="register"
+        android:text="@string/REGISTER"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:onClick="forgotPassword"
+        android:text="@string/FORGOT_PASSWORD"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+</LinearLayout>
