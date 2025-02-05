@@ -3,7 +3,7 @@ Travelers often find themselves without an easy way to tote around the luggage t
 This App give travelers who don’t have alternative options a way to safely stow their luggage so that they don’t have to carry it with them. With this app you can have your bags only when you want them – this app will take care of them when you don’t. This is Luggage storage network that connects travelers with local businesses (shops, cafes, hotels etc.) across the country. Our platform allows travelers to leave their bags/boxes with a local shop near them and enjoy the city without having to lug around their heavy bags when all they should be doing is living hands free life.
 
 # MODULES #
-# 1.1Admin: - #
+# 1.1 Admin: - #
 1. Add Locations
 2. Approve Partners
 3. Remove Partners based on feedback
